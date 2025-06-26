@@ -66,7 +66,7 @@ for scan_id, engagement_id in scan_engagement_mapping.items():
             last_scan_date = date_parser.parse(most_recent_test["target_end"])
 
     # Check if scan_date is newer than the most recently uploaded scan
-    if scan_date <= last_scan_date:
+    if scan_date.date() <= last_scan_date.date():
         print(
             f"Scan {scan_id} ({scan_date}) is not newer than last uploaded scan ({last_scan_date}). Skipping..."
         )
