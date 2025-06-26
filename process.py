@@ -7,13 +7,13 @@ from dateutil import parser as date_parser
 
 # Nessus config
 NESSUS_URL = "https://nessus:8834"
-NESSUS_ACCESS_KEY = "abc"
-NESSUS_SECRET_KEY = "123"
+NESSUS_ACCESS_KEY = "36d5db9b04476976608bb1e4601247ff0ed9c27fedc91938283b976f237262e1"
+NESSUS_SECRET_KEY = "671646bc6fc3ea3cbbe206ae73e0b3bbb05cf658b14e3a48773ad984c9449df2"
 EXPORT_FORMAT = "nessus"
 
 # DefectDojo config
-DEFECTDOJO_URL = "https://defectdojo/api/v2"
-DEFECTDOJO_API_KEY = "xyz"
+DEFECTDOJO_URL = "http://defectdojo.chi.swan.ac.uk:8080/api/v2"
+DEFECTDOJO_API_KEY = "4577632d2b41cece7c0eee3664d5532f093c9894"
 SCAN_TYPE = "Tenable Scan"
 
 # Load scan ID to engagement ID mapping
