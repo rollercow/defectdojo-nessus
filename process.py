@@ -76,6 +76,10 @@ for scan_id, engagement_id in scan_engagement_mapping.items():
     export_request = session.post(
         f"{NESSUS_URL}/scans/{scan_id}/export", json={"format": EXPORT_FORMAT}
     )
+    #Deal with the scan running
+    if export_request.status_code == 409:
+        print(f"Scan {scan_id} is currently running. Skipping for now.")
+        continue
     export_request.raise_for_status()
     file_id = export_request.json()["file"]
 
