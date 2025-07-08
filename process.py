@@ -13,7 +13,7 @@ EXPORT_FORMAT = "nessus"
 
 # DefectDojo config
 DEFECTDOJO_URL = "http://defectdojo.chi.swan.ac.uk:8080/api/v2"
-DEFECTDOJO_API_KEY = "4577632d2b41cece7c0eee3664d5532f093c9894"
+DEFECTDOJO_API_KEY = "46834b5f671214e52e75dc7a251ca36fde599f5a"
 SCAN_TYPE = "Tenable Scan"
 
 # Load scan ID to engagement ID mapping
